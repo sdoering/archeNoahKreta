@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_03f550fb0b594439819d586a48d17662 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_b676b1ec70b348c195817de20e51ce4a {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+    
+            <style> #vega_50b0539478ab42f8801f680fe3bc4e15 {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_c0f9a7904d4e4ac181e9ebb9ab87935e {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_d7f7e9ba19d34bd4992db0ccbd1fa7be {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_515379f7f61e4748b7faef519b3a6dbe {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_993715f1eb744553ab266a9c9f1fe91a {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_df49c6155e664d0c80b72b8bc2496d21 {
+                position : relative;
+                width : 500.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_03f550fb0b594439819d586a48d17662" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_03f550fb0b594439819d586a48d17662 = L.map(
+                                  'map_03f550fb0b594439819d586a48d17662',
+                                  {center: [35.322,25.1001],
+                                  zoom: 8,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_43f2e4046a02427ca4a1c8f51a6e8a21 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_03f550fb0b594439819d586a48d17662);
+
+        
+    
+            var regular_polygon_marker_e6b832073e7c4178af0b9e6a03e5a797 = new L.RegularPolygonMarker(
+                new L.LatLng(35.517583,23.905217),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+            var popup_bcf2b83430464c48a6cb7dc8008e4493 = L.popup({maxWidth: '800'});
+
+            
+                var vega_b676b1ec70b348c195817de20e51ce4a = $('             <div id="vega_b676b1ec70b348c195817de20e51ce4a"></div>             ')[0];
+                popup_bcf2b83430464c48a6cb7dc8008e4493.setContent(vega_b676b1ec70b348c195817de20e51ce4a);
+            
+
+            regular_polygon_marker_e6b832073e7c4178af0b9e6a03e5a797.bindPopup(popup_bcf2b83430464c48a6cb7dc8008e4493);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 157}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 52}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 192}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 63}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 234}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 69}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 281}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 24}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "platanias"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_b676b1ec70b348c195817de20e51ce4a);
+            
+            
+        
+    
+            var regular_polygon_marker_28f35c2981124dd6bcfcd4e6a06bacb1 = new L.RegularPolygonMarker(
+                new L.LatLng(35.512933,24.027401),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    
+            var popup_82d49e5961b347b3ba2ff45ce075360d = L.popup({maxWidth: '800'});
+
+            
+                var vega_50b0539478ab42f8801f680fe3bc4e15 = $('             <div id="vega_50b0539478ab42f8801f680fe3bc4e15"></div>             ')[0];
+                popup_82d49e5961b347b3ba2ff45ce075360d.setContent(vega_50b0539478ab42f8801f680fe3bc4e15);
+            
+
+            regular_polygon_marker_28f35c2981124dd6bcfcd4e6a06bacb1.bindPopup(popup_82d49e5961b347b3ba2ff45ce075360d);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 270}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 17}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 142}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 50}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 254}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 26}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 153}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 46}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "chania"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_50b0539478ab42f8801f680fe3bc4e15);
+            
+            
+        
+    
+            var regular_polygon_marker_5e7f7977342446468498bccd330e4eb3 = new L.RegularPolygonMarker(
+                new L.LatLng(35.452198,24.171107),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    
+            var popup_f927b93edfef418c9475a89bd46ebfa3 = L.popup({maxWidth: '800'});
+
+            
+                var vega_c0f9a7904d4e4ac181e9ebb9ab87935e = $('             <div id="vega_c0f9a7904d4e4ac181e9ebb9ab87935e"></div>             ')[0];
+                popup_f927b93edfef418c9475a89bd46ebfa3.setContent(vega_c0f9a7904d4e4ac181e9ebb9ab87935e);
+            
+
+            regular_polygon_marker_5e7f7977342446468498bccd330e4eb3.bindPopup(popup_f927b93edfef418c9475a89bd46ebfa3);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 269}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 60}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 150}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 43}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 91}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 12}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 265}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 35}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "rethymno"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_c0f9a7904d4e4ac181e9ebb9ab87935e);
+            
+            
+        
+    
+            var regular_polygon_marker_e392beaae7ec44a0893e2b1d652a74df = new L.RegularPolygonMarker(
+                new L.LatLng(35.363304,24.481352),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    
+            var popup_4742086b9df545a68130eb04b388b39d = L.popup({maxWidth: '800'});
+
+            
+                var vega_d7f7e9ba19d34bd4992db0ccbd1fa7be = $('             <div id="vega_d7f7e9ba19d34bd4992db0ccbd1fa7be"></div>             ')[0];
+                popup_4742086b9df545a68130eb04b388b39d.setContent(vega_d7f7e9ba19d34bd4992db0ccbd1fa7be);
+            
+
+            regular_polygon_marker_e392beaae7ec44a0893e2b1d652a74df.bindPopup(popup_4742086b9df545a68130eb04b388b39d);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 158}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 53}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 141}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 45}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 103}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 30}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 224}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 11}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "kalyves"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_d7f7e9ba19d34bd4992db0ccbd1fa7be);
+            
+            
+        
+    
+            var regular_polygon_marker_75eec5a72e80494a9d772b45d64196ca = new L.RegularPolygonMarker(
+                new L.LatLng(35.325723,25.13404),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    
+            var popup_16159edafbd04c75afde9d44bd95fd57 = L.popup({maxWidth: '800'});
+
+            
+                var vega_515379f7f61e4748b7faef519b3a6dbe = $('             <div id="vega_515379f7f61e4748b7faef519b3a6dbe"></div>             ')[0];
+                popup_16159edafbd04c75afde9d44bd95fd57.setContent(vega_515379f7f61e4748b7faef519b3a6dbe);
+            
+
+            regular_polygon_marker_75eec5a72e80494a9d772b45d64196ca.bindPopup(popup_16159edafbd04c75afde9d44bd95fd57);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 128}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 70}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 165}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 56}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 121}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 37}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 240}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 23}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Heraklion"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_515379f7f61e4748b7faef519b3a6dbe);
+            
+            
+        
+    
+            var regular_polygon_marker_3d994688395d4987a77c42c2feb302d2 = new L.RegularPolygonMarker(
+                new L.LatLng(35.192464,25.706721),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    
+            var popup_d7d8d127214d4f59860b456a6565ed95 = L.popup({maxWidth: '800'});
+
+            
+                var vega_993715f1eb744553ab266a9c9f1fe91a = $('             <div id="vega_993715f1eb744553ab266a9c9f1fe91a"></div>             ')[0];
+                popup_d7d8d127214d4f59860b456a6565ed95.setContent(vega_993715f1eb744553ab266a9c9f1fe91a);
+            
+
+            regular_polygon_marker_3d994688395d4987a77c42c2feb302d2.bindPopup(popup_d7d8d127214d4f59860b456a6565ed95);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 128}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 70}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 165}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 56}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 121}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 37}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 240}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 23}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Agios Nikolaos"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_993715f1eb744553ab266a9c9f1fe91a);
+            
+            
+        
+    
+            var regular_polygon_marker_083c8b16821343018593eb6ea13dc1a3 = new L.RegularPolygonMarker(
+                new L.LatLng(35.198516,26.077081),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 1,
+                    fillColor: '#43d9de',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: -90,
+                    radius: 10
+                    }
+                )
+                .addTo(map_03f550fb0b594439819d586a48d17662);
+            
+    
+            var popup_7109cc0c5061429bbfcff49cf5460c77 = L.popup({maxWidth: '800'});
+
+            
+                var vega_df49c6155e664d0c80b72b8bc2496d21 = $('             <div id="vega_df49c6155e664d0c80b72b8bc2496d21"></div>             ')[0];
+                popup_7109cc0c5061429bbfcff49cf5460c77.setContent(vega_df49c6155e664d0c80b72b8bc2496d21);
+            
+
+            regular_polygon_marker_083c8b16821343018593eb6ea13dc1a3.bindPopup(popup_7109cc0c5061429bbfcff49cf5460c77);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Tierarten", "type": "x"}, {"scale": "y", "title": "Anzahl Operationen", "type": "y"}], "data": [{"name": "table", "values": [{"col": "Kastration", "idx": "Katze (weiblich)", "val": 122}, {"col": "Weitere Operationen", "idx": "Katze (weiblich)", "val": 15}, {"col": "Kastration", "idx": "Katze (m\u00e4nnlich)", "val": 173}, {"col": "Weitere Operationen", "idx": "Katze (m\u00e4nnlich)", "val": 62}, {"col": "Kastration", "idx": "Hund (weiblich)", "val": 97}, {"col": "Weitere Operationen", "idx": "Hund (weiblich)", "val": 59}, {"col": "Kastration", "idx": "Hund (m\u00e4nnlich)", "val": 204}, {"col": "Weitere Operationen", "idx": "Hund (m\u00e4nnlich)", "val": 21}]}, {"name": "stats", "source": "table", "transform": [{"keys": ["data.idx"], "type": "facet"}, {"type": "stats", "value": "data.val"}]}], "height": 200, "legends": [{"fill": "color", "offset": 0, "properties": {}, "title": "Sitia"}], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}, {"height": "data.val", "point": "data.idx", "type": "stack"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "offset": -1, "scale": "x"}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "y", "scale": "y"}, "y2": {"field": "y2", "scale": "y"}}}, "type": "rect"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "padding": 0.2, "range": "width", "type": "ordinal", "zero": false}, {"domain": {"data": "stats", "field": "sum"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"], "type": "ordinal"}], "width": 350},vega_df49c6155e664d0c80b72b8bc2496d21);
+            
+            
+        
+</script>
