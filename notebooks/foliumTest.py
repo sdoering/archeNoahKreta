@@ -213,7 +213,7 @@ folium.RegularPolygonMarker(location=[35.325723, 25.134040],
                     weight = 1,
                     popup=popup1).add_to(kreta)
 
-#Agios Nikolas Marker
+#Agios Nikolaos Marker
 folium.RegularPolygonMarker(location=[35.192464, 25.706721],
                     fill_color = '#43d9de',
                     radius = 10,
